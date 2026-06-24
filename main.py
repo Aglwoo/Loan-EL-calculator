@@ -10,7 +10,7 @@ import tensorflow as tf
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 
-df = pd.read_csv("Task 3 and 4_Loan_data.csv")
+df = pd.read_csv("Loan_data.csv")
 
 X = df.drop(columns=["default", "customer_id"])
 y = df["default"]
